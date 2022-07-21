@@ -1,0 +1,36 @@
+.TodoInsert {
+  display: flex;
+  background: #495057;
+  input {
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+    flex: 1;
+    &:focus::placeholder {
+      visibility: hidden;
+    }
+    &::placeholder {
+      color: #dee2e6;
+    }
+  }
+  button {
+    background: #868e96;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.1s ease-in-out;
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}
