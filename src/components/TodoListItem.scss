@@ -1,10 +1,17 @@
+.TodoListItem-virtualized {
+  &:nth-child(even) {
+    background: #f8f9fa;
+  }
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}
+
 .TodoListItem {
   display: flex;
   align-items: center;
   padding: 16px;
-  &:nth-child(even) {
-    background: #f8f9fa;
-  }
+
   .checkbox {
     display: flex;
     flex: 1;
@@ -37,9 +44,5 @@
     &:hover {
       color: #ff8787;
     }
-  }
-
-  & + & {
-    border-top: 1px solid #dee2e6;
   }
 }
